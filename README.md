@@ -1,13 +1,13 @@
 # analisis-ventas-sql
 Análisis sobre un conjuntos de datos de ventas para identificar patrones de facturación, productos y categorías más relevantes, comportamiento mensual y métodos de pago, con el fin de realizar la toma de decisiones comerciales.
 
-# 📊 Dashboard de Ventas – Power BI
+# Dashboard de Ventas – Power BI
 
 Proyecto de análisis de ventas desarrollado con SQL y Power BI, enfocado en entender la evolución de la facturación, el comportamiento por categoría y los métodos de pago.
 
 ---
 
-## 🎯 Objetivo del proyecto
+## Objetivo del proyecto
 
 Analizar los datos de ventas para identificar:
 - Tendencias temporales de facturación
@@ -17,7 +17,7 @@ Analizar los datos de ventas para identificar:
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 El repositorio contiene los siguientes archivos:
 
@@ -29,7 +29,7 @@ El repositorio contiene los siguientes archivos:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 El dataset contiene información de ventas con los siguientes campos:
 - `fecha`
@@ -40,7 +40,7 @@ El dataset contiene información de ventas con los siguientes campos:
 
 ---
 
-## 🧮 Métricas principales
+##  Métricas principales
 
 - Facturación total
 - Cantidad de productos vendidos
@@ -51,7 +51,7 @@ El dataset contiene información de ventas con los siguientes campos:
 
 ---
 
-## 📈 Principales insights
+##  Principales insights
 
 - Durante los meses de febrero y mayo se concentró aproximadamente el 50% de la facturación total.
 - La categoría Tecnología lideró tanto en volumen de ventas como en ingresos, con un ticket promedio significativamente superior al resto.
@@ -59,7 +59,7 @@ El dataset contiene información de ventas con los siguientes campos:
 
 ---
 
-## 🖥️ Dashboard
+##  Dashboard
 
 Vista general del dashboard:
 
@@ -67,7 +67,7 @@ Vista general del dashboard:
 
 ---
 
-## 🛠️ Herramientas utilizadas
+##  Herramientas utilizadas
 
 - SQL (SQLite)
 - Power BI
@@ -75,6 +75,6 @@ Vista general del dashboard:
 
 ---
 
-## 📌 Notas
+## Notas
 
 Proyecto realizado con fines educativos y de práctica en análisis de datos.
