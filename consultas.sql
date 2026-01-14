@@ -36,17 +36,17 @@ ORDER BY mes, facturacion_total DESC;
 -- --------------------------------------------------------
 
 --5. Cantidad y facturación por método de pago
-SELECT metodo_pago, COUNT(*) AS cantidad_vendida SUM(monto) AS facturacion
+SELECT metodo_pago, COUNT(*) AS cantidad_vendida, SUM(monto) AS facturacion
 FROM ventas
 GROUP BY metodo_pago;
 
 -- --------------------------------------------------------
 
---6. Cantidad vendida por categoría (ventas, no unidades de productos)
-SELECT categoria, COUNT(*) AS cantidad_vendida
+--6. Cantidad de productos vendidos por categoría 
+SELECT categoria, COUNT(producto) AS productos_vendidos
 FROM ventas
 GROUP BY categoria
-ORDER BY cantidad_vendida DESC;
+ORDER BYproductos_vendidos DESC;
 
 -- --------------------------------------------------------
 
@@ -54,5 +54,19 @@ ORDER BY cantidad_vendida DESC;
 SELECT categoria, ROUND(SUM(monto)*100/(SELECT SUM(monto) FROM ventas), 2) AS porcentaje
 FROM ventas
 GROUP BY categoria;
+
+-- --------------------------------------------------------
+
+--8. Porcentaje de facturación por método de pago
+SELECT metodo_pago, ROUND(SUM(monto)*100/(SELECT SUM(monto) FROM ventas), 2) AS porcentaje
+FROM ventas
+GROUP BY metodo_pago;
+
+-- --------------------------------------------------------
+
+--9. Ticket promedio
+SELECT ROUND(AVG(monto), 1) AS ticket_promedio
+FROM ventas
+
 
 
