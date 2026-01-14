@@ -53,5 +53,5 @@ ORDER BY cantidad_vendida DESC
 --7. Porcentaje de facturación por categoría
 SELECT categoria, ROUND(SUM(monto)*100/(SELECT SUM(monto) FROM ventas), 2) AS porcentaje
 FROM ventas
-
 GROUP BY categoria
+
