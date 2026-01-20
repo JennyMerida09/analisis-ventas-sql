@@ -71,7 +71,7 @@ Vista general del dashboard:
 
 - SQL (SQLite)
 - Power BI
-- Kaggle (datos obtenidos para el proyecto)
+- Dataset Kaggle 
 
 ---
 
