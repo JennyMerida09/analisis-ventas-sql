@@ -71,12 +71,10 @@ Vista general del dashboard:
 
 - SQL (SQLite)
 - Power BI
-- GitHub
+- Kaggle (datos obtenidos para el proyecto)
 
 ---
 
 ## Notas
-
-Las consultas SQL respaldan y validan los resultados presentados en el dashboard de Power BI.
 
 Proyecto realizado con fines de práctica en análisis de datos.
