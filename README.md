@@ -23,7 +23,7 @@ El repositorio contiene los siguientes archivos:
 
 - `dashboard.pbix` → Archivo principal del dashboard en Power BI.
 - `consultas.sql` → Consultas SQL utilizadas para el análisis exploratorio.
-- `create_table.sql` → c
+- `create_table.sql` → Script SQL para la creación de la tabla de ventas
 - `ventas.csv` → Dataset utilizado para el análisis y visualización.
 - `/images/` → Capturas del dashboard para visualización rápida.
 
