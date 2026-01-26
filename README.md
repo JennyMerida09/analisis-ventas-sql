@@ -1,5 +1,5 @@
-# Analisis de ventas
-Análisis sobre un conjunto de datos sobre ventas para identificar patrones de facturación, productos y categorías más relevantes, comportamiento mensual y métodos de pago, con el fin de realizar la toma de decisiones comerciales.
+# Analisis de ventas de Amazon
+Análisis sobre un conjunto de datos sobre ventas de Amazon para identificar patrones de facturación, productos y categorías más relevantes, comportamiento mensual y métodos de pago, con el fin de realizar la toma de decisiones comerciales.
 
 # Dashboard de Ventas – Power BI
 
