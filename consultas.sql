@@ -50,23 +50,39 @@ ORDER BYproductos_vendidos DESC;
 
 -- --------------------------------------------------------
 
---7. Porcentaje de facturación por categoría
+--7. Producto más vendido por categoría
+SELECT categoria, producto, cantidad
+FROM (SELECT categoria, producto,  
+             COUNT(*) AS cantidad,
+             ROW_NUMBER() OVER(
+             PARTITION BY categoria
+             ORDER BY COUNT(*) DESC
+             ) AS cp
+     FROM ventas
+     GROUP BY categoria, producto
+)
+WHERE cp = 1;
+
+-- --------------------------------------------------------
+
+--8. Porcentaje de facturación por categoría
 SELECT categoria, ROUND(SUM(monto)*100/(SELECT SUM(monto) FROM ventas), 2) AS porcentaje
 FROM ventas
 GROUP BY categoria;
 
 -- --------------------------------------------------------
 
---8. Porcentaje de facturación por método de pago
+--9. Porcentaje de facturación por método de pago
 SELECT metodo_pago, ROUND(SUM(monto)*100/(SELECT SUM(monto) FROM ventas), 2) AS porcentaje
 FROM ventas
 GROUP BY metodo_pago;
 
 -- --------------------------------------------------------
 
---9. Ticket promedio
+--10. Ticket promedio
 SELECT ROUND(AVG(monto), 1) AS ticket_promedio
 FROM ventas
+
 
 
 
